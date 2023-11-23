@@ -1,4 +1,5 @@
 # TDLCR
+Data Format
 #vertices #edges
 
 vi vj #interpolant_points
@@ -28,4 +29,4 @@ label
 
 1. All interpolation points must fulfill FIFO property
 2. Vertex index starts from zero， and there should not exists repeated edges.
-3. There should not exists repeated edges.
+
