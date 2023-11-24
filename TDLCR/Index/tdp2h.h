@@ -172,7 +172,7 @@ public:
 			}
 			insert_I_in(u, src, path, travetime);
 			if (visited.find(u) == visited.end()) {
-				dfs(g, src, u, visited, pathSet, path, curt);
+				dfs(g, src, u, visited, pathSet, path, cur);
 			}
 			pathSet.erase(label);
 			path = savedPath; // 恢复path的值
@@ -217,7 +217,7 @@ public:
 				}
 				insert_I_out(u, src, reverseInteger(path), travetime);
 
-				dfsReverse(g, src, u, visited, path, curt);
+				dfsReverse(g, src, u, visited, path, cur);
 				
 			}
 			path = savedPath; // 恢复path的值
